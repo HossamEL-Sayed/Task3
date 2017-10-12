@@ -1,7 +1,11 @@
 <?php
 
+$username = $_POST['username'];
+$message = $_POST['message'];
 
+echo "Welcome Mr. " . $username . ". </br>";
 
-$name= $_POST['username'];
-
-echo "Welcome Mr. " . $name . ".";
+if (!($message == "")) {
+	echo "Your message is : " . $message . ".";
+}
+?>
